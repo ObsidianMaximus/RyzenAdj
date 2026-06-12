@@ -1,0 +1,9 @@
+[Unit]
+Description=Apply RyzenAdj limits
+
+[Service]
+Type=oneshot
+ExecStart=/etc/acpi/ryzen-power.sh
+
+[Install]
+WantedBy=multi-user.target
